@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const messageDiv = document.createElement("div");
         messageDiv.classList.add("message", sender === "user" ? "user-message" : "bot-message");
 
-        if (isAudio) {git add *
+        if (isAudio) {
             messageDiv.innerHTML = `🎤───────────  ${content}`; // Display as text-based timer
         } else {
             messageDiv.textContent = content;
