@@ -107,9 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
     async function sendAudio(audioBlob) {
         const formData = new FormData();
         formData.append("file", audioBlob, "audio.webm");
-    
+    //  const response = await fetch("http://localhost:5000/process_audio", {
         try {
-            const response = await fetch("http://localhost:5000/process_audio", {
+            const response = await fetch("https://kappak-nig.onrender.com", {
                 method: "POST",
                 body: formData
             });
